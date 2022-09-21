@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./css/linea.css">
+
+    <title>Linea Temporal</title>
+</head>
+
+<body style=" background-color: #1d2630;">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="tituloo" class="display-5 mb-5"><strong>SUCESOS DEL
+                    MUNDO</strong></h1>
+        </div>
+        <div class="container card col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-12 p-5">
+            <form action="" id="frmValores" autocomplete="off">
+                <div class="row ">
+                    <div class="col-25 justify-content-center">
+                        <div id="a" class="row">
+                            <label  for="tituloEvento">Titulo del Evento</label><br>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="TituloEvento" id="TituloEvento"> <br>
+                        </div>
+                        <div id="a" class="row">
+                            <label for="DescripcionEvento">Descripcion del Evento</label><br>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="DescripcionEvento" id="DescripcionEvento"> <br>
+                        </div>
+                        <div id="a" class="row">
+                            <label for="FechaInicio">Fecha de inicio</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" name="FechaInicio" id="FechaInicio" max="DateTimeNow();" required> <br>
+                        </div>
+                        <div id="a" class="row ">
+                            <label for="FechaFin">Fecha del fin</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" name="FechaFin" id="FechaFin" required>
+                        </div>
+                        <br>
+                        <div id="a" class="col-9">
+                            <button id="boton" class="btn btn-success" type="submit">Agregar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <br>
+        <h2 class="letraa">Lista Sucesos</h2>
+
+        <section class="timeline-area" id="timeline-area">
+            
+        </section>
+
+    </div>
+
+    <script src="./js/lineatemporal.js"></script>
+</body>
+
+</html>
